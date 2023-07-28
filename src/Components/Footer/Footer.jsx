@@ -30,13 +30,15 @@ const Footer = () => (
       </div>
       <div className="end-footer d-flex justify-content-between">
         <div className="l-footers d-flex justify-content-between align-items-center mt-5">
-          <h4>payment partners</h4>
+          <h4 className="h6 align-items-center">payment partners</h4>
           <i className="fab mx-2 fa-amazon-pay"></i>
           <i className="fab mx-2 fa-cc-amex"></i>
           <i className="fab mx-2 fa-paypal"></i>
         </div>
         <div className="i-footers d-flex justify-content-between align-items-center mt-5">
-          <h4> get deliveries with fresh cart</h4>
+          <h4 className="h6 align-items-center ">
+            get deliveries with fresh cart
+          </h4>
           <i className="fab mx-2 fa-google-play"></i>
           <i className="fab mx-2 fa-app-store-ios"></i>
         </div>

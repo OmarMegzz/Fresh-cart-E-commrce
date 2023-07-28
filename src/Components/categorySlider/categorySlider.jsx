@@ -19,15 +19,15 @@ function CategorySlider() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 7,
+    slidesToShow: 4,
     slidesToScroll: 1,
   };
   return (
     <>
       <Slider {...settings}>
         {categories?.map((category) => (
-          <div className="mt-5" key={category._id}>
-            <img width={"100%"} height={"150vh"} src={category.image} />
+          <div className=" w-100 h-100 mt-5" key={category._id}>
+            <img className="w-100 h-100" src={category.image} />
             <h2 className="h6 pt-2 w-100">{category.name}</h2>
           </div>
         ))}
