@@ -37,11 +37,7 @@ function App() {
       children: [
         {
           index: true,
-          element: (
-            <ProutectedRoute>
-              <Home />
-            </ProutectedRoute>
-          ),
+          element: <Home />,
         },
         {
           path: "categories",

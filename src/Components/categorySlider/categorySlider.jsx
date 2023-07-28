@@ -27,8 +27,8 @@ function CategorySlider() {
       <Slider {...settings}>
         {categories?.map((category) => (
           <div className="mt-5" key={category._id}>
-            <img className="w-100 " height={200} src={category.image} />
-            <h2 className="h6 pt-2">{category.name}</h2>
+            <img width={"100%"} height={"150vh"} src={category.image} />
+            <h2 className="h6 pt-2 w-100">{category.name}</h2>
           </div>
         ))}
       </Slider>

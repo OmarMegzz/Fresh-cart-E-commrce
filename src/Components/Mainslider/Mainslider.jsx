@@ -13,19 +13,22 @@ function Mainslider() {
 
   return (
     <>
-      <div className="mb-5">
+      <div
+        className="mb-5
+      "
+      >
         <Slider {...settings}>
           <div>
             <img
-              height={500}
-              className="w-100"
+              height={"400vh"}
+              className="w-100 "
               src={require("../../images/grocery-banner-2.jpeg")}
               alt=""
             />
           </div>
           <div>
             <img
-              height={500}
+              height={"400vh"}
               className="w-100"
               src={require("../../images/grocery-banner.png")}
               alt=""
@@ -33,7 +36,7 @@ function Mainslider() {
           </div>
           <div>
             <img
-              height={500}
+              height={"400vh"}
               className="w-100"
               src={require("../../images/slider-2.jpeg")}
               alt=""
@@ -41,7 +44,7 @@ function Mainslider() {
           </div>
           <div>
             <img
-              height={500}
+              height={"400vh"}
               className="w-100"
               src={require("../../images/slider-image-1.jpeg")}
               alt=""
@@ -49,7 +52,7 @@ function Mainslider() {
           </div>
           <div>
             <img
-              height={500}
+              height={"400vh"}
               className="w-100"
               src={require("../../images/slider-image-2.jpeg")}
               alt=""
@@ -57,7 +60,7 @@ function Mainslider() {
           </div>
           <div>
             <img
-              height={500}
+              height={"400vh"}
               className="w-100"
               src={require("../../images/slider-image-3.jpeg")}
               alt=""
