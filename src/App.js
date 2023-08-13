@@ -20,6 +20,8 @@ import jwtDecode from "jwt-decode";
 import ProutectedRoute from "./Components/ProutectedRoute/ProutectedRoute";
 import Mainslider from "./Components/Mainslider/Mainslider";
 import { CartContextProvider } from "./Context/CartContext";
+import BrandsDetails from "./Components/BrandsDetails/BrandsDetails";
+import CategoryDetails from "./Components/CategoyrDetails/CategoyrDetails";
 
 function App() {
   const [userData, setuserData] = useState(null);
@@ -48,6 +50,10 @@ function App() {
           ),
         },
         {
+          path: "CategoryDetails",
+          element: <CategoryDetails/>,
+        },
+        {
           path: "categorySlider",
           element: (
             <ProutectedRoute>
@@ -65,28 +71,16 @@ function App() {
         },
         {
           path: "proudcts",
-          element: (
-            <ProutectedRoute>
-              <Proudcts />
-            </ProutectedRoute>
-          ),
+          element: <Proudcts />,
         },
         {
           path: "Proudctdetails",
-          element: (
-            <ProutectedRoute>
-              <Proudctdetails />
-            </ProutectedRoute>
-          ),
+          element: <Proudctdetails />,
         },
 
         {
           path: "about",
-          element: (
-            <ProutectedRoute>
-              <About />
-            </ProutectedRoute>
-          ),
+          element: <About />,
         },
         {
           path: "cart",
@@ -96,16 +90,16 @@ function App() {
             </ProutectedRoute>
           ),
         },
-        { path: "login", element: <Login saveUserData={saveUserData} /> },
-        { path: "register", element: <Register /> },
         {
           path: "brands",
-          element: (
-            <ProutectedRoute>
-              <Brands />
-            </ProutectedRoute>
-          ),
+          element: <Brands />,
         },
+        {
+          path: "brands/BrandsDetails",
+          element: <BrandsDetails />,
+        },
+        { path: "login", element: <Login saveUserData={saveUserData} /> },
+        { path: "register", element: <Register /> },
         { path: "*", element: <NotFound /> },
       ],
     },

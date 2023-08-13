@@ -24,6 +24,13 @@ a:hover {
   color: black;
   text-decoration: none;
 }
+
+.card {
+  border: none;
+}
+.card:hover {
+  border: solid 1px black;
+}
 .product:hover {
   box-shadow: var(--shadow);
   border: solid 1px var(--main-color);
@@ -52,4 +59,10 @@ a:hover {
 
 .border-main {
   border: solid 1px var(--main-color) !important;
+}
+.card1 {
+  border: none;
+}
+.card1:hover {
+  border: solid 1px #0aad0a;
 }

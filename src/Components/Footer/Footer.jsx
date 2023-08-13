@@ -12,7 +12,7 @@ const Footer = () => (
           </p>
         </div>
         <div className="container search-bar  w-75 mt-5">
-          <form class="d-flex" role="search">
+          <form className="d-flex" role="search">
             <input
               className="form-control me-2 mt-5"
               type="search"
